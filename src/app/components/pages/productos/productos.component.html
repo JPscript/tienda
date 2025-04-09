@@ -1,15 +1,7 @@
 <p>productos works!</p>
-
-@for(producto of productos; track producto) {
-    <p>Hola desde productos {{ producto }}</p>
-    }
+<button>
+    <a routerLink="/productos/crear-producto">Crear Producto</a>    
+</button>
 @for(esteProducto of estosSiSonProductos; track esteProducto.id) {
     <p>Hola desde productos {{ esteProducto.nombre }}</p>
     }
-    <p>ESTE NO SE HACE UN VIERNES!</p>
-    <p>ESTE NO SE HACE UN VIERNES!</p>
-    <p>ESTE NO SE HACE UN VIERNES!</p>
-    <p>ESTE NO SE HACE UN VIERNES!</p>
-    <p>ESTE NO SE HACE UN VIERNES!</p>
-    <p>ESTE NO SE HACE UN VIERNES!</p>
-<button (click)="addData()">MAAS PRODUCTOS POR FAVOR!!</button>

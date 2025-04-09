@@ -21,17 +21,17 @@ export class ProductosService {
     console.log('ProductosService initialized');
     return this.http.get<Producto[]>(this.apiUrl); 
   }
-  getProducto(id: number): Observable<Producto[]> {
+/*   getProducto(id: number): Observable<Producto[]> {
     return this.http.get<Producto[]>(`${this.apiUrl}/${id}`); 
-  }
-  createProducto(producto: Producto): Observable<Producto[]> {
+  } */
+  crearProducto(producto: FormData): Observable<Producto[]> {
     return this.http.post<Producto[]>(this.apiUrl, producto); 
   }
-  updateProducto(id: number, producto: Producto): Observable<Producto[]> {
+/*   updateProducto(id: number, producto: Producto): Observable<Producto[]> {
     return this.http.put<Producto[]>(`${this.apiUrl}/${id}`, producto); 
   }
   
   deleteProducto(id: number): Observable<Producto[]> {
     return this.http.delete<Producto[]>(`${this.apiUrl}/${id}`); 
-  }
+  } */
 }
